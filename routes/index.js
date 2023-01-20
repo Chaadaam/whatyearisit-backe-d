@@ -3,9 +3,8 @@ var router = express.Router();
 
 // création de ma route.
 router.get("/year", function (req, res) {
-  const date = Date.now();
-  const year = date.getFullYear;
-  res.json({ now: year });
+  const year = Date.now();
+  res.json({ now: year.getFullYear() });
 });
 
 module.exports = router;
